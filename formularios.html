@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Formularios en Html">
+        <meta name="keywords" content="Formularios">
+        <link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <section>
+            <h2>Ejemplo con elemento: Name</h2>
+            <form name="formulario" method="get" action="procesar.php">
+                <p>
+                    <label>Nombre:<input type="text" name="nombre" maxlength="4"></label>
+                </p>
+                <p>
+                    <label>Edad:<input type="text" name="edad" value="28"></label>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+        </section>
+        <!--Ejemplo con For-->
+        <section>
+            <h2>Ejemplo con elemento: For</h2>
+            <form name="formulario" method="get" action="procesar.php">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </p>
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="text" name="edad" id="edad" value="28">
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+        </section>
+    </body>
+</html>
